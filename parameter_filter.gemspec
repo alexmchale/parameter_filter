@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "actioncontroller-parameter_filter/version"
+require "parameter_filter/version"
 
 Gem::Specification.new do |s|
-  s.name        = "actioncontroller-parameter_filter"
+  s.name        = "parameter_filter"
   s.version     = Activerecord::ParameterFilter::VERSION
   s.authors     = ["Alex McHale"]
   s.email       = ["alex@anticlever.com"]
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{A gem to easily filter out unwanted parameters in ActionController.}
   s.description = %q{A gem to easily filter out unwanted parameters in ActionController.}
 
-  s.rubyforge_project = "actioncontroller-parameter_filter"
+  s.rubyforge_project = "parameter_filter"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

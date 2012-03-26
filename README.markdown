@@ -1,5 +1,5 @@
-actioncontroller-parameter_filter
-=================================
+parameter_filter
+================
 
 Summary
 -------
@@ -13,7 +13,7 @@ Installation
 
 Include the following in your Gemfile:
 
-    gem "actioncontroller-parameter_filter"
+    gem "parameter_filter"
 
 Usage
 -----

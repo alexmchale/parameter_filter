@@ -1,4 +1,4 @@
-require "actioncontroller-parameter_filter"
+require "parameter_filter"
 require "minitest/autorun"
 require "minitest/mock"
 require "turn/autorun"
