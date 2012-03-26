@@ -34,7 +34,7 @@ module ActionController
       end
 
       def accepts options = {}
-        @_accepted_fields ||= { nil: { controller: {}, action: {}, id: {} } }
+        @_accepted_fields ||= { nil => { "controller" => {}, "action" => {}, "id" => {} } }
         fields = options[:fields] || options[:field] || {}
 
         case options[:on]
@@ -59,7 +59,7 @@ module ActionController
 
       def remove_filtered_parameters accepted_fields = nil, parameters = nil
         if !accepted_fields && !parameters
-          accepted_fields = self.class.instance_variable_get("@_accepted_fields")
+          accepted_fields = self.class.instance_variable_get("@_accepted_fields") || {}
           fields = (accepted_fields[nil] || {}).merge(accepted_fields[self.action_name] || {})
           remove_filtered_parameters fields, self.params
         elsif parameters
