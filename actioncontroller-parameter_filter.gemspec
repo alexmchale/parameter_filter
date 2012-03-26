@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Alex McHale"]
   s.email       = ["alex@anticlever.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A gem to easily filter out unwanted parameters in ActionController.}
+  s.description = %q{A gem to easily filter out unwanted parameters in ActionController.}
 
   s.rubyforge_project = "actioncontroller-parameter_filter"
 
