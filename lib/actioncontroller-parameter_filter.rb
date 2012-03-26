@@ -60,7 +60,6 @@ module ActionController
       def remove_filtered_parameters accepted_fields = nil, parameters = nil
         if !accepted_fields && !parameters
           accepted_fields = self.class.instance_variable_get("@_accepted_fields")
-          raise [ :af, accepted_fields ].inspect
           fields = (accepted_fields[nil] || {}).merge(accepted_fields[self.action_name] || {})
           remove_filtered_parameters fields, self.params
         elsif parameters
