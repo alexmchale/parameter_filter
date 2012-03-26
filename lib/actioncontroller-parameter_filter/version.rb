@@ -1,0 +1,5 @@
+module Activerecord
+  module ParameterFilter
+    VERSION = "0.0.1"
+  end
+end
